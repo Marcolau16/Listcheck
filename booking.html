@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reservar Cita - Clean Face HMO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💆‍♀️</text></svg>">
+</head>
+<body>
+
+<div class="app-viewport">
+    
+    <!-- BARRA SUPERIOR DE RESERVA -->
+    <header class="booking-nav-header">
+        <button class="booking-back-btn" id="btn-booking-back" title="Volver">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="booking-header-title">
+            <h2 id="step-title-text">Seleccionar servicio</h2>
+            <small id="step-biz-name">Clean Face HMO</small>
+        </div>
+        <img src="" alt="Clean Face HMO" class="booking-header-avatar" id="booking-biz-avatar">
+    </header>
+
+    <!-- CONTENEDOR DE PASOS -->
+    <main style="flex: 1; display: flex; flex-direction: column;">
+        
+        <!-- ==========================================
+             PASO 1: SELECCIÓN DE SERVICIOS
+             ========================================== -->
+        <section class="booking-step-pane active" id="pane-step-services">
+            <div id="services-accordions-container">
+                <!-- Acordeones de categorías inyectados por JS -->
+            </div>
+        </section>
+
+        <!-- ==========================================
+             PASO 2: ESPECIALISTA / CABINA
+             ========================================== -->
+        <section class="booking-step-pane" id="pane-step-specialist">
+            <div class="booking-summary-banner">
+                <div>
+                    <div class="meta-label">Servicios seleccionados:</div>
+                    <div class="meta-value" id="spec-summary-services">1 servicio</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="meta-label">Duración aprox:</div>
+                    <div class="meta-value" id="spec-summary-duration">1 h</div>
+                </div>
+            </div>
+
+            <div class="section-title">¿Con quién deseas atenderte?</div>
+            <div class="specialists-list" id="specialists-container">
+                <!-- Especialistas inyectados por JS -->
+            </div>
+        </section>
+
+        <!-- ==========================================
+             PASO 3: FECHA Y HORA (CALENDARIO)
+             ========================================== -->
+        <section class="booking-step-pane" id="pane-step-datetime">
+            
+            <div class="booking-summary-banner">
+                <div>
+                    <div class="meta-label">Clean Face HMO:</div>
+                    <div class="meta-value" id="date-summary-services">Dermapen</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="meta-label">Total estimado:</div>
+                    <div class="meta-value" id="date-summary-price" style="color: var(--brand-primary);">$449</div>
+                </div>
+            </div>
+
+            <!-- Calendario Mensual -->
+            <div class="calendar-widget-card">
+                <div class="calendar-header-nav">
+                    <button class="calendar-arrow-btn" id="cal-prev-month">&lsaquo;</button>
+                    <div class="calendar-month-title" id="cal-month-label">septiembre, 2026</div>
+                    <button class="calendar-arrow-btn" id="cal-next-month">&rsaquo;</button>
+                </div>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>dom</th>
+                            <th>lun</th>
+                            <th>mar</th>
+                            <th>mié</th>
+                            <th>jue</th>
+                            <th>vie</th>
+                            <th>sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-days-body">
+                        <!-- Días generados por JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Grilla de Horarios / Turnos -->
+            <div class="time-slots-card">
+                <div class="time-slots-header" id="selected-day-title">Horarios disponibles</div>
+                <div class="time-slots-grid" id="slots-container">
+                    <!-- Turnos generados por JS -->
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+             PASO 4: DATOS DEL CLIENTE
+             ========================================== -->
+        <section class="booking-step-pane" id="pane-step-client">
+            
+            <!-- Resumen final de la cita -->
+            <div class="booking-summary-review">
+                <div class="review-row">
+                    <span class="label">Servicios:</span>
+                    <span class="val" id="review-services-name">-</span>
+                </div>
+                <div class="review-row">
+                    <span class="label">Especialista:</span>
+                    <span class="val" id="review-specialist-name">-</span>
+                </div>
+                <div class="review-row">
+                    <span class="label">Fecha y Hora:</span>
+                    <span class="val" id="review-datetime">-</span>
+                </div>
+                <div class="review-row">
+                    <span class="label">Duración estimada:</span>
+                    <span class="val" id="review-duration">-</span>
+                </div>
+                <div class="review-row">
+                    <span class="label">Total a pagar en cabina:</span>
+                    <span class="val" id="review-total-price" style="color: var(--brand-primary); font-size: 16px;">$0</span>
+                </div>
+            </div>
+
+            <div class="booking-form-card">
+                <div class="section-title" style="margin-bottom: 16px;">Tus Datos de Contacto</div>
+                <form id="booking-client-form">
+                    <div class="form-group">
+                        <label class="form-label" for="client-name">Nombre y Apellido: *</label>
+                        <input type="text" id="client-name" class="form-input" placeholder="Ej. María García" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Número de WhatsApp / Teléfono: *</label>
+                        <div class="phone-input-group">
+                            <select id="client-phone-code">
+                                <option value="52" selected>🇲🇽 +52</option>
+                                <option value="1">🇺🇸 +1</option>
+                                <option value="34">🇪🇸 +34</option>
+                                <option value="57">🇨🇴 +57</option>
+                                <option value="54">🇦🇷 +54</option>
+                                <option value="56">🇨🇱 +56</option>
+                            </select>
+                            <input type="tel" id="client-phone" placeholder="662 123 4567" required>
+                        </div>
+                        <small style="color: #777; font-size: 11.5px; margin-top: 4px; display: block;">
+                            Te contactaremos por WhatsApp para confirmar tu cita.
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="client-email">Correo Electrónico (Opcional):</label>
+                        <input type="email" id="client-email" class="form-input" placeholder="correo@ejemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="client-notes">Notas o Comentarios (Opcional):</label>
+                        <textarea id="client-notes" class="form-textarea" placeholder="¿Tienes alguna condición especial en la piel o duda?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary-reserve" style="width: 100%; margin-top: 10px;">
+                        Confirmar y Agendar Cita
+                    </button>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+             PASO 5: PANTALLA DE CONFIRMACIÓN
+             ========================================== -->
+        <section class="booking-step-pane" id="pane-step-confirmation">
+            <div class="confirmation-card">
+                <div class="success-badge-icon">✓</div>
+                <h2>¡Cita Agendada con Éxito!</h2>
+                <div class="confirmation-folio-badge" id="conf-folio-code">Folio: #CF-0000</div>
+                <p style="color: #666; font-size: 13.5px; margin-bottom: 16px;">
+                    Tu cita está <strong style="color:#28a745;">confirmada</strong>. Hemos notificado al negocio automáticamente por WhatsApp. 🎉
+                </p>
+
+                <div class="confirmation-details-box">
+                    <div class="conf-detail-row">
+                        <span style="color:#666;">Cliente:</span>
+                        <strong id="conf-client-name">-</strong>
+                    </div>
+                    <div class="conf-detail-row">
+                        <span style="color:#666;">Tratamiento(s):</span>
+                        <strong id="conf-services-list">-</strong>
+                    </div>
+                    <div class="conf-detail-row">
+                        <span style="color:#666;">Especialista:</span>
+                        <strong id="conf-specialist-name">-</strong>
+                    </div>
+                    <div class="conf-detail-row">
+                        <span style="color:#666;">Fecha:</span>
+                        <strong id="conf-date">-</strong>
+                    </div>
+                    <div class="conf-detail-row">
+                        <span style="color:#666;">Hora:</span>
+                        <strong id="conf-time">-</strong>
+                    </div>
+                    <div class="conf-detail-row">
+                        <span style="color:#666;">Ubicación:</span>
+                        <strong style="max-width: 60%; text-align: right; font-size: 12.5px;" id="conf-address">Hermosillo, Sonora</strong>
+                    </div>
+                    <div class="conf-detail-row">
+                        <span>Total:</span>
+                        <span id="conf-total-price">$0</span>
+                    </div>
+                </div>
+
+                <!-- Separador con label opcional -->
+                <div style="display: flex; align-items: center; gap: 10px; margin: 18px 0 12px;">
+                    <div style="flex:1; height:1px; background:#e5e5e5;"></div>
+                    <span style="font-size: 11.5px; color: #aaa; white-space: nowrap;">Opciones adicionales</span>
+                    <div style="flex:1; height:1px; background:#e5e5e5;"></div>
+                </div>
+
+                <div class="conf-actions-wrap">
+                    <!-- Botón OPCIONAL: la clienta envía su propia confirmación -->
+                    <a href="#" id="btn-conf-whatsapp" class="btn-whatsapp-confirm" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>También quiero confirmar por WhatsApp</span>
+                    </a>
+
+                    <a href="#" id="btn-conf-gcal" class="btn-calendar-add" target="_blank" rel="noopener">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                        <span>Agregar a Google Calendar</span>
+                    </a>
+
+                    <a href="index.html" class="btn-back-home">
+                        Volver a la Página Principal
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- BARRA FLOTANTE DE NAVEGACIÓN "SEGUIR" (PASO 1, 2 Y 3) -->
+    <div class="booking-floating-footer" id="booking-floating-footer" style="display: none;">
+        <div class="footer-selection-info">
+            <div class="footer-count-text" id="footer-count-label">0 seleccionados</div>
+            <div class="footer-price-text" id="footer-price-label">$0</div>
+        </div>
+        <button class="btn-booking-next" id="btn-floating-next">
+            Seguir
+        </button>
+    </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="js/data.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+</html>
