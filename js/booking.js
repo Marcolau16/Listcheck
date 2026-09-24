@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const bookingState = {
         currentStep: 1,
         selectedServices: [],
-        selectedSpecialist: data.specialists[0] || { id: "any", name: "Cualquier especialista disponible" },
+        selectedSpecialist: (data.specialists && data.specialists.length > 0) ? data.specialists[0] : { id: "larav", name: "Larav Beauty" },
         selectedDate: null,
         selectedTime: null,
         calYear: new Date().getFullYear(),

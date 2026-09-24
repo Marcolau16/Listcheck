@@ -149,6 +149,19 @@ switch ($action) {
         }
         break;
 
+    case 'save_categories':
+        if (is_array($input)) {
+            $db = getDatabase($dbFile);
+            if (!$db) $db = [];
+            $db['categories'] = $input;
+            saveDatabase($dbFile, $db);
+            echo json_encode(['status' => 'ok', 'categories' => $input]);
+        } else {
+            http_response_code(400);
+            echo json_encode(['status' => 'error']);
+        }
+        break;
+
     case 'save_schedule':
         if ($input) {
             $db = getDatabase($dbFile);

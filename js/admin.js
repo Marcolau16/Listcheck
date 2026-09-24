@@ -695,7 +695,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         // 1. Escuchar señal por BroadcastChannel
         try {
             if (window.BroadcastChannel) {
-                const bc = new BroadcastChannel("cleanface_events");
+                const bc = new BroadcastChannel("larav_studio_events");
                 bc.onmessage = (event) => {
                     if (event.data && event.data.type === "NEW_APPOINTMENT") {
                         handleIncomingNewAppointment(event.data.appointment);
@@ -706,7 +706,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // 2. Escuchar cambios de localStorage entre pestañas
         window.addEventListener("storage", (e) => {
-            if (e.key === "cleanface_latest_appointment" && e.newValue) {
+            if (e.key === "larav_latest_appointment" && e.newValue) {
                 try {
                     const parsed = JSON.parse(e.newValue);
                     if (parsed && parsed.appointment) {
@@ -1059,7 +1059,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             XLSX.utils.book_append_sheet(wb, ws1, "Citas del Mes");
             XLSX.utils.book_append_sheet(wb, ws2, "Servicios Realizados");
 
-            const fileName = `Reporte_CleanFace_${monthNames[month]}_${year}.xlsx`;
+            const fileName = `Reporte_LaravStudio_${monthNames[month]}_${year}.xlsx`;
             XLSX.writeFile(wb, fileName);
         }
     }

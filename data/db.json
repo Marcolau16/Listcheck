@@ -1,72 +1,46 @@
 {
     "business": {
-        "name": "Clean Face HMO",
-        "tagline": "Cosmetólogo",
-        "about": "Tratamientos faciales y corporales exclusivos para mujeres ✨",
-        "specialty": "Cosmetólogo & Cosmiatra",
-        "address": "Juan José Aguirre #5, Entre Gral. Piña Y Gral. Reyes, 83180, Hermosillo, Sonora",
-        "phone": "+526627158174",
-        "whatsapp": "526627158174",
-        "instagram": "https://instagram.com/cleanface_hmo",
-        "instagramHandle": "@cleanface_hmo",
+        "name": "Larav Beuty Studio | Manicura",
+        "tagline": "Estudio de Belleza & Manicura",
+        "about": "Especialistas en Uñas, Maquillaje, Spa de Cejas y Estilizado de cabello ✨",
+        "specialty": "Uñas · Maquillaje · Spa de Cejas · Cabello",
+        "address": "Avenida 11 #241",
+        "phone": "+526621819929",
+        "whatsapp": "526621819929",
+        "instagram": "https://instagram.com/larav_beutystudio",
+        "instagramHandle": "@larav_beutystudio",
         "mapCoordinates": {
-            "lat": 29.14541,
-            "lng": -110.966564
+            "lat": 29.0892,
+            "lng": -110.9613
         },
-        "coverUrl": "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1200&q=80",
-        "avatarUrl": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
-        "cabinNotes": "Miércoles a lunes atiende cabina Tanya\nMartes, atiende cabina Nadia",
+        "coverUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+        "avatarUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80",
+        "cabinNotes": "Atención con previa cita en nuestras estaciones de belleza y manicura.",
         "currencySymbol": "$",
         "currencyCode": "MXN",
         "bookingIntervalMinutes": 30,
         "adminPin": "1234",
         "bannerPromo": {
-            "title": "PROMOCIÓN SEPTIEMBRE",
-            "desc": "Dermapen $499\nLimpieza profunda $400\nHifu $500\nHydralips $150"
+            "title": "PROMOCIONES DEL MES",
+            "desc": "Manicura Rusa + Gelish $399\nSpa de Cejas Completo $450\nMaquillaje Social $550\nOndas Glam $280"
         }
     },
     "specialists": [
         {
-            "id": "any",
-            "name": "Cualquier especialista disponible",
-            "title": "Asignación automática",
-            "bio": "Te asignaremos a la profesional disponible en la fecha y hora seleccionada.",
-            "avatarUrl": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
-            "phone": "526627158174",
-            "workDays": [0, 1, 2, 3, 4, 5, 6],
-            "workHours": {},
-            "blockedDates": [],
-            "active": true
-        },
-        {
-            "id": "tanya",
-            "name": "Cabina Tanya",
-            "title": "Cosmetóloga Facial y Corporal",
-            "bio": "Especialista en limpiezas profundas, Dermapen, hidratación celular y tratamientos corporales antiestrés.",
+            "id": "larav",
+            "name": "Larav Beauty",
+            "title": "Master en Uñas & Estilismo",
+            "bio": "Especialista en manicura rusa, uñas acrílicas con diseño, visagismo y estilizado.",
             "avatarUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=400&q=80",
-            "phone": "526627158174",
-            "workDays": [0, 1, 3, 4, 5, 6],
+            "phone": "526621819929",
+            "workDays": [1, 2, 3, 4, 5, 6],
             "workHours": {
-                "0": { "open": "12:00", "close": "17:00", "active": true },
-                "1": { "open": "11:00", "close": "20:00", "active": true },
-                "3": { "open": "16:00", "close": "20:00", "active": true },
-                "4": { "open": "14:00", "close": "20:00", "active": true },
-                "5": { "open": "11:00", "close": "20:00", "active": true },
-                "6": { "open": "11:00", "close": "18:00", "active": true }
-            },
-            "blockedDates": [],
-            "active": true
-        },
-        {
-            "id": "nadia",
-            "name": "Lic. Cosmiatría Nadia Hernández",
-            "title": "Lic. en Cosmiatría & Láser",
-            "bio": "Especialista en Hollywoodpeel láser, reducción de poros, peeling ultrasónico y protocolos antiedad.",
-            "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-            "phone": "526627158174",
-            "workDays": [2],
-            "workHours": {
-                "2": { "open": "11:00", "close": "18:00", "active": true }
+                "1": { "open": "10:00", "close": "19:00", "active": true },
+                "2": { "open": "10:00", "close": "19:00", "active": true },
+                "3": { "open": "10:00", "close": "19:00", "active": true },
+                "4": { "open": "10:00", "close": "19:00", "active": true },
+                "5": { "open": "10:00", "close": "19:00", "active": true },
+                "6": { "open": "10:00", "close": "18:00", "active": true }
             },
             "blockedDates": [],
             "active": true
@@ -75,290 +49,294 @@
     "schedule": {
         "0": {
             "dayName": "Domingo",
-            "open": "12:00",
-            "close": "17:00",
-            "active": true
+            "open": "11:00",
+            "close": "16:00",
+            "active": false
         },
         "1": {
             "dayName": "Lunes",
-            "open": "11:00",
-            "close": "20:00",
+            "open": "10:00",
+            "close": "19:00",
             "active": true
         },
         "2": {
             "dayName": "Martes",
-            "open": "11:00",
-            "close": "18:00",
+            "open": "10:00",
+            "close": "19:00",
             "active": true
         },
         "3": {
             "dayName": "Miércoles",
-            "open": "16:00",
-            "close": "20:00",
+            "open": "10:00",
+            "close": "19:00",
             "active": true
         },
         "4": {
             "dayName": "Jueves",
-            "open": "14:00",
-            "close": "20:00",
+            "open": "10:00",
+            "close": "19:00",
             "active": true
         },
         "5": {
             "dayName": "Viernes",
-            "open": "11:00",
-            "close": "20:00",
+            "open": "10:00",
+            "close": "19:00",
             "active": true
         },
         "6": {
             "dayName": "Sábado",
-            "open": "11:00",
+            "open": "10:00",
             "close": "18:00",
             "active": true
         }
     },
     "categories": [
         {
-            "id": "promo-mes",
-            "name": "PROMOCIÓN DEL MES"
+            "id": "unas",
+            "name": "UÑAS"
         },
         {
-            "id": "promo-martes",
-            "name": "PROMOCIÓN SOLO MARTES (Lic cosmiatria Nadia Hernández)"
+            "id": "maquillaje",
+            "name": "MAQUILLAJE"
         },
         {
-            "id": "faciales",
-            "name": "FACIALES"
+            "id": "cejas",
+            "name": "SPA DE CEJAS"
         },
         {
-            "id": "corporales",
-            "name": "CORPORALES"
+            "id": "cabello",
+            "name": "ESTILIZADO DE CABELLO"
         }
     ],
     "services": [
         {
-            "id": "srv-dermapen-promo",
-            "categoryId": "promo-mes",
-            "name": "Dermapen",
-            "price": 449,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Antiedad, secuela de acné y despigmentante con microneedling regenerativo.",
-            "active": true
-        },
-        {
-            "id": "srv-limpieza-promo",
-            "categoryId": "promo-mes",
-            "name": "Limpieza profunda",
-            "price": 400,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Exfoliación, vaporización, extracción de impurezas, mascarilla calmante y alta frecuencia.",
-            "active": true
-        },
-        {
-            "id": "srv-hifu-promo",
-            "categoryId": "promo-mes",
-            "name": "Hifu",
-            "price": 500,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Ultrasonido focalizado de alta intensidad para tensado facial y efecto lifting sin cirugía.",
-            "active": true
-        },
-        {
-            "id": "srv-hydralips-promo",
-            "categoryId": "promo-mes",
-            "name": "Hydralips",
-            "price": 150,
-            "duration": 30,
-            "durationText": "30 min",
-            "description": "Hidratación y revitalización profunda de labios con ácido hialurónico y exfoliación suave.",
-            "active": true
-        },
-        {
-            "id": "srv-hollywood-peel",
-            "categoryId": "promo-martes",
-            "name": "Hollywoodpeel",
+            "id": "srv-unas-manicura-rusa",
+            "categoryId": "unas",
+            "name": "Manicura Rusa / Combinada",
             "price": 350,
+            "duration": 45,
+            "durationText": "45 min",
+            "description": "Limpieza profunda de cutícula con torno, nivelación de uña natural y acabado impecable.",
+            "active": true
+        },
+        {
+            "id": "srv-unas-gelish",
+            "categoryId": "unas",
+            "name": "Aplicación de Gelish",
+            "price": 280,
+            "duration": 45,
+            "durationText": "45 min",
+            "description": "Esmaltado semipermanente de alta durabilidad con base niveladora y amplia gama de tonos.",
+            "active": true
+        },
+        {
+            "id": "srv-unas-acrilicas",
+            "categoryId": "unas",
+            "name": "Uñas Acrílicas (Set Nuevo)",
+            "price": 550,
+            "duration": 90,
+            "durationText": "1 h 30 min",
+            "description": "Extensiones acrílicas esculturales o con tip, acabado natural, punta a elección y diseño.",
+            "active": true
+        },
+        {
+            "id": "srv-unas-retoque",
+            "categoryId": "unas",
+            "name": "Retoque de Acrílico",
+            "price": 380,
             "duration": 60,
             "durationText": "1 h",
-            "description": "Tratamiento a base de mascarilla de carbón activado y aplicación de láser. Ayuda a eliminar pigmentación, iluminar y reducir poros.",
+            "description": "Relleno y balance de crecimiento de acrílico con cambio de esmaltado gelish.",
             "active": true
         },
         {
-            "id": "srv-limpieza-martes",
-            "categoryId": "promo-martes",
-            "name": "Limpieza profunda (Especial Martes)",
-            "price": 300,
+            "id": "srv-unas-pedicura-spa",
+            "categoryId": "unas",
+            "name": "Pedicura Spa & Gelish",
+            "price": 420,
             "duration": 60,
             "durationText": "1 h",
-            "description": "Incluye exfoliación química y ultrasónica así como extracción manual y terapia led fotodinámica.",
+            "description": "Exfoliación hidratante, tratamiento de asperezas, masaje relajante en pies y esmalte en gel.",
             "active": true
         },
         {
-            "id": "srv-masaje-cuello",
-            "categoryId": "promo-martes",
-            "name": "Masaje cuello y media espalda",
-            "price": 350,
-            "duration": 30,
-            "durationText": "30 min",
-            "description": "Alivio de contracturas y tensión muscular en cuello, hombros y zona dorsal.",
-            "active": true
-        },
-        {
-            "id": "srv-masaje-relajante-martes",
-            "categoryId": "promo-martes",
-            "name": "Masaje relajante",
-            "price": 450,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Masaje corporal completo con aromaterapia y aceites esenciales para aliviar el estrés.",
-            "active": true
-        },
-        {
-            "id": "srv-hydrafacial-martes",
-            "categoryId": "promo-martes",
-            "name": "Hydrafacial",
-            "price": 300,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Hidrodermoabrasión con sueros nutritivos, hidratación intensiva y extracción con succión suave.",
-            "active": true
-        },
-        {
-            "id": "srv-anti-arrugas",
-            "categoryId": "faciales",
-            "name": "Anti arrugas",
-            "price": 580,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Enfocado en prevenir y tratar la aparición de signos de envejecimiento prematuro con péptidos y colágeno.",
-            "active": true
-        },
-        {
-            "id": "srv-dermaplaning",
-            "categoryId": "faciales",
-            "name": "Dermaplaning",
-            "price": 450,
-            "duration": 60,
-            "durationText": "1 h",
-            "description": "Limpieza básica con depilación del vello facial fino y exfoliación física con bisturí dermatológico para piel ultralisa.",
-            "active": true
-        },
-        {
-            "id": "srv-prdn-salmon",
-            "categoryId": "faciales",
-            "name": "Facial PDRN de salmón",
+            "id": "srv-maq-social",
+            "categoryId": "maquillaje",
+            "name": "Maquillaje Social (Día / Noche)",
             "price": 650,
             "duration": 60,
             "durationText": "1 h",
-            "description": "PDRN de salmón aplicado con microneedling ideal para revitalizar e hidratar la piel logrando una apariencia luminosa al instante.",
+            "description": "Técnica de piel blindada anti-transferencia, contornos, sombras difuminadas y pestañas de tira.",
             "active": true
         },
         {
-            "id": "srv-reductor-poros",
-            "categoryId": "faciales",
-            "name": "Reductor de poros y textura",
+            "id": "srv-maq-glam",
+            "categoryId": "maquillaje",
+            "name": "Maquillaje Glam / Fiesta",
+            "price": 800,
+            "duration": 75,
+            "durationText": "1 h 15 min",
+            "description": "Efectos glitter, delineado gráfico o smokey eye de impacto con pestañas 3D de alta gama.",
+            "active": true
+        },
+        {
+            "id": "srv-maq-editorial",
+            "categoryId": "maquillaje",
+            "name": "Maquillaje para Fotografía / Graduación",
+            "price": 750,
+            "duration": 60,
+            "durationText": "1 h",
+            "description": "Piel HD de alta definición diseñada especialmente para lucir impecable bajo luces y cámaras.",
+            "active": true
+        },
+        {
+            "id": "srv-maq-novia",
+            "categoryId": "maquillaje",
+            "name": "Maquillaje Novia / Quinceañera",
+            "price": 1500,
+            "duration": 90,
+            "durationText": "1 h 30 min",
+            "description": "Protocolo nupcial de máxima duración a prueba de lágrimas, hidratación de lujo y pestaña mink.",
+            "active": true
+        },
+        {
+            "id": "srv-cejas-diseno",
+            "categoryId": "cejas",
+            "name": "Diseño y Perfilado de Cejas",
+            "price": 180,
+            "duration": 30,
+            "durationText": "30 min",
+            "description": "Visagismo personalizado según la proporción de tu rostro y depilación con cera y pinza.",
+            "active": true
+        },
+        {
+            "id": "srv-cejas-laminado",
+            "categoryId": "cejas",
+            "name": "Laminado de Cejas (Brow Lamination)",
+            "price": 400,
+            "duration": 45,
+            "durationText": "45 min",
+            "description": "Direccionamiento y fijación del vello para cejas con aspecto más poblado, peinado y definido.",
+            "active": true
+        },
+        {
+            "id": "srv-cejas-henna",
+            "categoryId": "cejas",
+            "name": "Tinte de Henna / Cejas HD",
+            "price": 320,
+            "duration": 40,
+            "durationText": "40 min",
+            "description": "Pigmentación vegetal de ceja y piel para un sombreado natural que resalta tu mirada.",
+            "active": true
+        },
+        {
+            "id": "srv-cejas-spa-completo",
+            "categoryId": "cejas",
+            "name": "Spa de Cejas Completo (Laminado + Henna + Perfilado)",
             "price": 600,
             "duration": 60,
             "durationText": "1 h",
-            "description": "Protocolo especializado para afinar poros dilatados, regular sebo y mejorar la textura de la piel.",
+            "description": "El paquete estrella: visagismo, depilación, laminado, nutrición con keratina y color henna.",
             "active": true
         },
         {
-            "id": "srv-masaje-completo",
-            "categoryId": "corporales",
-            "name": "Masaje Relajante Corporal Completo",
+            "id": "srv-cab-ondas",
+            "categoryId": "cabello",
+            "name": "Ondas y Rizos Glam",
+            "price": 350,
+            "duration": 45,
+            "durationText": "45 min",
+            "description": "Ondas al agua, estilo Hollywood o playeras desenfadadas con fijación profesional anti-humedad.",
+            "active": true
+        },
+        {
+            "id": "srv-cab-alaciado",
+            "categoryId": "cabello",
+            "name": "Alaciado Exprés & Sellado de Puntas",
+            "price": 300,
+            "duration": 45,
+            "durationText": "45 min",
+            "description": "Planchado térmico con protectores de calor y gotas de seda para un brillo espejo.",
+            "active": true
+        },
+        {
+            "id": "srv-cab-peinado",
+            "categoryId": "cabello",
+            "name": "Peinado Recogido o Semirecogido",
             "price": 550,
             "duration": 60,
             "durationText": "1 h",
-            "description": "Terapia corporal antiestrés con maniobras suaves y calor localizado.",
+            "description": "Diseño de peinado para eventos sociales, coctel, bodas o graduaciones.",
             "active": true
         },
         {
-            "id": "srv-drenaje-linfatico",
-            "categoryId": "corporales",
-            "name": "Drenaje Linfático Manual",
-            "price": 480,
-            "duration": 50,
-            "durationText": "50 min",
-            "description": "Estimula la circulación linfática, reduce retención de líquidos y desinflama.",
+            "id": "srv-cab-botox",
+            "categoryId": "cabello",
+            "name": "Tratamiento Botox Capilar / Cauterización",
+            "price": 700,
+            "duration": 75,
+            "durationText": "1 h 15 min",
+            "description": "Nutrición capilar intensiva anti-frizz, reconstrucción de hebra y suavidad inmediata.",
             "active": true
         }
     ],
     "gallery": [
         {
             "id": "gal-1",
-            "album": "faciales",
-            "title": "Tratamiento Facial Rejuvenecedor",
-            "src": "https://images.unsplash.com/photo-1512290900672-1f4f5a34e06d?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1512290900672-1f4f5a34e06d?auto=format&fit=crop&w=400&q=80",
-            "comment": "Dermapen y terapia regenerativa para secuelas de acné y luminosidad."
+            "album": "unas",
+            "title": "Set Acrílico y Francesa Moderna",
+            "src": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80",
+            "comment": "Uñas acrílicas esculturales con terminado almendra y french blanco."
         },
         {
             "id": "gal-2",
-            "album": "faciales",
-            "title": "Limpieza Profunda con Hidrodermoabrasión",
-            "src": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
-            "comment": "Extracción profunda de poros e hidratación con mascarilla de alginato."
+            "album": "unas",
+            "title": "Manicura Rusa con Gelish Nude",
+            "src": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=400&q=80",
+            "comment": "Limpieza de cutícula en seco y nivelación perfecta."
         },
         {
             "id": "gal-3",
-            "album": "faciales",
-            "title": "Terapia LED Fotodinámica",
-            "src": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80",
-            "comment": "Luz roja para estimulación de colágeno y azul para control bacteriano."
+            "album": "maquillaje",
+            "title": "Maquillaje Social Glam",
+            "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80",
+            "comment": "Piel satinada, labios nude y pestañas para evento de noche."
         },
         {
             "id": "gal-4",
-            "album": "faciales",
-            "title": "Dermaplaning & Glow",
-            "src": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80",
-            "comment": "Piel suave y libre de células muertas para una absorción óptima de cosmecéuticos."
+            "album": "cejas",
+            "title": "Laminado y Tinte de Cejas",
+            "src": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80",
+            "comment": "Definición y volumen natural con efecto peinado hacia arriba."
         },
         {
             "id": "gal-5",
-            "album": "corporales",
-            "title": "Masaje Descontracturante & Relajante",
-            "src": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80",
-            "comment": "Sesión relajante de espalda y cuello con aceites botánicos."
-        },
-        {
-            "id": "gal-6",
-            "album": "corporales",
-            "title": "Drenaje Linfático y Moldeo",
-            "src": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=400&q=80",
-            "comment": "Protocolo corporal reductor y drenante."
-        },
-        {
-            "id": "gal-7",
-            "album": "faciales",
-            "title": "Hydralips Revitalizante",
-            "src": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80",
-            "thumb": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80",
-            "comment": "Labios visiblemente hidratados y con color natural saludable."
+            "album": "cabello",
+            "title": "Ondas de Sirena y Brillo Espejo",
+            "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=80",
+            "comment": "Estilizado con protección térmica para movimiento y suavidad."
         }
     ],
     "reviews": [
         {
             "id": "rev-1",
-            "author": "Sofía Martínez",
+            "author": "Fernanda López",
             "rating": 5,
             "date": "Hace 2 días",
-            "comment": "¡Excelente atención! Mi piel quedó súper suave y luminosa con el Dermapen. Tanya es súper profesional y atenta.",
-            "avatar": "S"
+            "comment": "¡El mejor lugar de uñas de Hermosillo! La manicura rusa me duró intacta más de 3 semanas. Súper recomendadas.",
+            "avatar": "F"
         },
         {
             "id": "rev-2",
             "author": "Valeria Ramos",
             "rating": 5,
             "date": "Hace 1 semana",
-            "comment": "Fui en martes con la Lic. Nadia para el Hollywoodpeel y el resultado fue increíble, me cerró mucho los poros. 100% recomendado.",
+            "comment": "Me hice maquillaje social y ondas para una boda y me duró toda la noche intacto. La atención en el estudio es de 10.",
             "avatar": "V"
         },
         {
@@ -366,32 +344,32 @@
             "author": "Carolina Mendívil",
             "rating": 5,
             "date": "Hace 2 semanas",
-            "comment": "Las instalaciones muy limpias, relajantes y un trato de primera. La limpieza profunda es la mejor que me han hecho en Hermosillo.",
+            "comment": "El spa de cejas me encantó, el laminado con henna le dio un marco hermoso a mi rostro. Ya agendé mi siguiente cita.",
             "avatar": "C"
         }
     ],
     "appointments": [
         {
-            "id": "CF-1002",
-            "clientName": "Fernanda López",
-            "clientPhone": "6621234567",
-            "clientEmail": "fernanda@ejemplo.com",
-            "specialistId": "tanya",
-            "specialistName": "Cabina Tanya",
-            "date": "2026-09-22",
+            "id": "LV-1001",
+            "clientName": "Ana Morales",
+            "clientPhone": "6621819929",
+            "clientEmail": "ana@ejemplo.com",
+            "specialistId": "larav",
+            "specialistName": "Larav Beauty",
+            "date": "2026-09-25",
             "time": "11:00",
-            "endTime": "12:00",
+            "endTime": "11:45",
             "services": [
                 {
-                    "id": "srv-limpieza-promo",
-                    "name": "Limpieza profunda",
-                    "price": 400
+                    "id": "srv-unas-manicura-rusa",
+                    "name": "Manicura Rusa / Combinada",
+                    "price": 350
                 }
             ],
-            "totalPrice": 400,
+            "totalPrice": 350,
             "status": "confirmada",
-            "notes": "Primera vez en el salón",
-            "createdAt": "2026-09-18T10:15:00Z"
+            "notes": "Cita inicial",
+            "createdAt": "2026-09-24T10:00:00Z"
         }
     ]
 }

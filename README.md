@@ -1,6 +1,6 @@
-# 💆‍♀️ Sistema Web de Agendamiento de Citas - Clean Face HMO
+# 💅 Sistema Web de Agendamiento de Citas - Larav Beuty Studio | Manicura
 
-Un sitio web moderno, rápido y mobile-first para agendar citas en línea, inspirado fielmente en el diseño, estructura y experiencia de usuario de **`apnt.app/cleanfacehmo`** (Masters Pro).
+Un sitio web moderno, rápido y mobile-first para agendar citas en línea para servicios de uñas, maquillaje, spa de cejas y estilizado de cabello.
 
 ---
 
@@ -13,16 +13,16 @@ Un sitio web moderno, rápido y mobile-first para agendar citas en línea, inspi
   - 📋 **Servicios / Inicio**: Banner de promociones del mes, botón principal "Reserve Ahora" y botón directo de WhatsApp "¿Tienes una pregunta? Contáctame".
   - 📸 **Galería de Tratamientos**: Álbumes organizados (*Faciales*, *Corporales*) con visor modal / Lightbox en pantalla completa, zoom y navegación táctil con flechas.
   - ⭐ **Reseñas**: Puntuación de 5.0 estrellas, testimonios de clientes verificados y botón con modal para publicar nuevas reseñas.
-  - 📍 **Ubicación & Horarios**: Dirección con enlace directo a Google Maps, notas de cabinas (*Miércoles a lunes cabina Tanya, Martes cabina Nadia*), tabla de horarios por día de la semana con resaltado automático del día de hoy y botones de contacto telefónico e Instagram.
+  - 📍 **Ubicación & Horarios**: Dirección con enlace directo a Google Maps, notas de atención, tabla de horarios por día de la semana con resaltado automático del día de hoy y botones de contacto telefónico e Instagram.
 
 ### 🗓 2. Embudo de Reserva Inteligente Paso a Paso (`booking.html`)
 - **Paso 1: Catálogo de Servicios**:
-  - Organizados por categorías colapsables (*Promoción del mes*, *Promoción solo martes*, *Faciales*, *Corporales*).
+  - Organizados por categorías colapsables (*Uñas*, *Maquillaje*, *Spa de Cejas*, *Estilizado de Cabello*).
   - Selección múltiple de servicios con cálculo instantáneo de duración y costo.
   - Descripciones desplegables ("Lee más..." / "Leer menos").
   - Barra flotante inferior fija con recuento dinámico y botón "Seguir".
 - **Paso 2: Especialista**:
-  - Selección de profesional (*Cualquiera*, *Cabina Tanya*, *Lic. Cosmiatría Nadia Hernández*).
+  - Selección de profesional (*Larav Beauty*).
 - **Paso 3: Calendario Interactivo y Turnos**:
   - Calendario mensual con navegación de meses.
   - Días hábiles resaltados en verde y días no laborales o pasados deshabilitados.

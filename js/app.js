@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         if (instaLink) {
             instaLink.href = biz.instagram;
-            instaLink.textContent = biz.instagramHandle || "@cleanface_hmo";
+            instaLink.textContent = biz.instagramHandle || "@larav_beutystudio";
         }
         if (specialtyText) specialtyText.textContent = biz.specialty;
         if (aboutText) aboutText.textContent = biz.about;
