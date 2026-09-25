@@ -1,5 +1,6 @@
 {
     "business": {
+<<<<<<< Updated upstream
         "name": "Larav Beuty Studio | Manicura",
         "tagline": "Estudio de Belleza & Manicura",
         "about": "Especialistas en Uñas, Maquillaje, Spa de Cejas y Estilizado de cabello ✨",
@@ -9,13 +10,30 @@
         "whatsapp": "526621819929",
         "instagram": "https://instagram.com/larav_beutystudio",
         "instagramHandle": "@larav_beutystudio",
+=======
+        "name": "Clean Face HMO",
+        "tagline": "Cosmetólogo",
+        "about": "Tratamientos faciales y corporales exclusivos para mujeres ✨",
+        "specialty": "Cosmetólogo & Cosmiatra",
+        "address": "Juan José Aguirre #5, Entre Gral. Piña Y Gral. Reyes, 83180, Hermosillo, Sonora",
+        "phone": "+526627158174",
+        "whatsapp": "526627158174",
+        "instagram": "https:\/\/instagram.com\/cleanface_hmo",
+        "instagramHandle": "@cleanface_hmo",
+>>>>>>> Stashed changes
         "mapCoordinates": {
             "lat": 29.0892,
             "lng": -110.9613
         },
+<<<<<<< Updated upstream
         "coverUrl": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
         "avatarUrl": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80",
         "cabinNotes": "Atención con previa cita en nuestras estaciones de belleza y manicura.",
+=======
+        "coverUrl": "https:\/\/images.unsplash.com\/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1200&q=80",
+        "avatarUrl": "https:\/\/images.unsplash.com\/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
+        "cabinNotes": "Miércoles a lunes atiende cabina Tanya\nMartes, atiende cabina Nadia",
+>>>>>>> Stashed changes
         "currencySymbol": "$",
         "currencyCode": "MXN",
         "bookingIntervalMinutes": 30,
@@ -27,6 +45,7 @@
     },
     "specialists": [
         {
+<<<<<<< Updated upstream
             "id": "larav",
             "name": "Larav Beauty",
             "title": "Master en Uñas & Estilismo",
@@ -41,55 +60,142 @@
                 "4": { "open": "10:00", "close": "19:00", "active": true },
                 "5": { "open": "10:00", "close": "19:00", "active": true },
                 "6": { "open": "10:00", "close": "18:00", "active": true }
+=======
+            "id": "any",
+            "name": "Cualquier especialista disponible",
+            "title": "Asignación automática",
+            "bio": "Te asignaremos a la profesional disponible en la fecha y hora seleccionada.",
+            "avatarUrl": "https:\/\/images.unsplash.com\/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
+            "phone": "526627158174",
+            "workDays": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "workHours": [],
+            "blockedDates": [],
+            "active": true
+        },
+        {
+            "id": "tanya",
+            "name": "Cabina Tanya",
+            "title": "Cosmetóloga Facial y Corporal",
+            "bio": "Especialista en limpiezas profundas, Dermapen, hidratación celular y tratamientos corporales antiestrés.",
+            "avatarUrl": "https:\/\/images.unsplash.com\/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=400&q=80",
+            "phone": "526627158174",
+            "workDays": [
+                0,
+                1,
+                3,
+                4,
+                5,
+                6
+            ],
+            "workHours": {
+                "0": {
+                    "open": "12:00",
+                    "close": "17:00",
+                    "active": true
+                },
+                "1": {
+                    "open": "11:00",
+                    "close": "20:00",
+                    "active": true
+                },
+                "3": {
+                    "open": "16:00",
+                    "close": "20:00",
+                    "active": true
+                },
+                "4": {
+                    "open": "14:00",
+                    "close": "20:00",
+                    "active": true
+                },
+                "5": {
+                    "open": "11:00",
+                    "close": "20:00",
+                    "active": true
+                },
+                "6": {
+                    "open": "11:00",
+                    "close": "18:00",
+                    "active": true
+                }
+            },
+            "blockedDates": [],
+            "active": true
+        },
+        {
+            "id": "nadia",
+            "name": "Lic. Cosmiatría Nadia Hernández",
+            "title": "Lic. en Cosmiatría & Láser",
+            "bio": "Especialista en Hollywoodpeel láser, reducción de poros, peeling ultrasónico y protocolos antiedad.",
+            "avatarUrl": "https:\/\/images.unsplash.com\/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+            "phone": "526627158174",
+            "workDays": [
+                2
+            ],
+            "workHours": {
+                "2": {
+                    "open": "11:00",
+                    "close": "18:00",
+                    "active": true
+                }
+>>>>>>> Stashed changes
             },
             "blockedDates": [],
             "active": true
         }
     ],
-    "schedule": {
-        "0": {
+    "schedule": [
+        {
             "dayName": "Domingo",
             "open": "11:00",
             "close": "16:00",
             "active": false
         },
-        "1": {
+        {
             "dayName": "Lunes",
             "open": "10:00",
             "close": "19:00",
             "active": true
         },
-        "2": {
+        {
             "dayName": "Martes",
             "open": "10:00",
             "close": "19:00",
             "active": true
         },
-        "3": {
+        {
             "dayName": "Miércoles",
             "open": "10:00",
             "close": "19:00",
             "active": true
         },
-        "4": {
+        {
             "dayName": "Jueves",
             "open": "10:00",
             "close": "19:00",
             "active": true
         },
-        "5": {
+        {
             "dayName": "Viernes",
             "open": "10:00",
             "close": "19:00",
             "active": true
         },
-        "6": {
+        {
             "dayName": "Sábado",
             "open": "10:00",
             "close": "18:00",
             "active": true
         }
-    },
+    ],
     "categories": [
         {
             "id": "unas",
@@ -283,6 +389,7 @@
     "gallery": [
         {
             "id": "gal-1",
+<<<<<<< Updated upstream
             "album": "unas",
             "title": "Set Acrílico y Francesa Moderna",
             "src": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80",
@@ -320,6 +427,61 @@
             "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80",
             "thumb": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=80",
             "comment": "Estilizado con protección térmica para movimiento y suavidad."
+=======
+            "album": "faciales",
+            "title": "Tratamiento Facial Rejuvenecedor",
+            "src": "https:\/\/images.unsplash.com\/photo-1512290900672-1f4f5a34e06d?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1512290900672-1f4f5a34e06d?auto=format&fit=crop&w=400&q=80",
+            "comment": "Dermapen y terapia regenerativa para secuelas de acné y luminosidad."
+        },
+        {
+            "id": "gal-2",
+            "album": "faciales",
+            "title": "Limpieza Profunda con Hidrodermoabrasión",
+            "src": "https:\/\/images.unsplash.com\/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80",
+            "comment": "Extracción profunda de poros e hidratación con mascarilla de alginato."
+        },
+        {
+            "id": "gal-3",
+            "album": "faciales",
+            "title": "Terapia LED Fotodinámica",
+            "src": "https:\/\/images.unsplash.com\/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80",
+            "comment": "Luz roja para estimulación de colágeno y azul para control bacteriano."
+        },
+        {
+            "id": "gal-4",
+            "album": "faciales",
+            "title": "Dermaplaning & Glow",
+            "src": "https:\/\/images.unsplash.com\/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=400&q=80",
+            "comment": "Piel suave y libre de células muertas para una absorción óptima de cosmecéuticos."
+        },
+        {
+            "id": "gal-5",
+            "album": "corporales",
+            "title": "Masaje Descontracturante & Relajante",
+            "src": "https:\/\/images.unsplash.com\/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80",
+            "comment": "Sesión relajante de espalda y cuello con aceites botánicos."
+        },
+        {
+            "id": "gal-6",
+            "album": "corporales",
+            "title": "Drenaje Linfático y Moldeo",
+            "src": "https:\/\/images.unsplash.com\/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=400&q=80",
+            "comment": "Protocolo corporal reductor y drenante."
+        },
+        {
+            "id": "gal-7",
+            "album": "faciales",
+            "title": "Hydralips Revitalizante",
+            "src": "https:\/\/images.unsplash.com\/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80",
+            "thumb": "https:\/\/images.unsplash.com\/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80",
+            "comment": "Labios visiblemente hidratados y con color natural saludable."
+>>>>>>> Stashed changes
         }
     ],
     "reviews": [
@@ -350,6 +512,7 @@
     ],
     "appointments": [
         {
+<<<<<<< Updated upstream
             "id": "LV-1001",
             "clientName": "Ana Morales",
             "clientPhone": "6621819929",
@@ -357,6 +520,44 @@
             "specialistId": "larav",
             "specialistName": "Larav Beauty",
             "date": "2026-09-25",
+=======
+            "id": "CF-31346",
+            "clientName": "mARCOO",
+            "clientPhone": "5266271621",
+            "clientEmail": "",
+            "specialistId": "any",
+            "specialistName": "Cualquier especialista disponible",
+            "specialistPhone": "526627158174",
+            "date": "2026-09-21",
+            "time": "11:30",
+            "endTime": "13:30",
+            "durationMins": 120,
+            "services": [
+                {
+                    "id": "srv-dermapen-promo",
+                    "name": "Dermapen",
+                    "price": 449
+                },
+                {
+                    "id": "srv-limpieza-promo",
+                    "name": "Limpieza profunda",
+                    "price": 400
+                }
+            ],
+            "totalPrice": 849,
+            "status": "confirmada",
+            "notes": "",
+            "createdAt": "2026-09-22T02:25:17.407Z"
+        },
+        {
+            "id": "CF-1002",
+            "clientName": "Fernanda López",
+            "clientPhone": "6621234567",
+            "clientEmail": "fernanda@ejemplo.com",
+            "specialistId": "tanya",
+            "specialistName": "Cabina Tanya",
+            "date": "2026-09-22",
+>>>>>>> Stashed changes
             "time": "11:00",
             "endTime": "11:45",
             "services": [
